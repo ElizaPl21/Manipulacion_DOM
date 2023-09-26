@@ -60,10 +60,6 @@ const profileBtn = document.getElementById('ProfileBtn');
 
 profileBtn.addEventListener('click', () => {
     userName.textContent = inputName.value;
-    age.textContent = inputEdad.value;
-    email.textContent = inputCorreo.value;
-
-
 })
 
 const users = [
@@ -133,11 +129,9 @@ const populateElements = (user, userElements) => {
     return userElements;
 }
 
-
 const renderElements = (card, elements) => {
-    card.append(elements.user_name, elements.age, elements.description);
+    card.append(elements.user_name, elements.age, elements.description,);
 }
-
 
 users.forEach(user => {
     const card = createCard();
@@ -148,3 +142,9 @@ users.forEach(user => {
     CARD_SECTION.append(card);
 
 })
+
+
+
+//Ejercicio 2
+
+
