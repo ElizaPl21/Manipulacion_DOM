@@ -1,29 +1,3 @@
-/*const createCard=() =>{
-    const card = document.createElement('div');
-    card.classList.add('profile', 'container');
-    return card;
-
-}
-
-const inputName = document.getElementById('name');
-const userName = document.getElementById('username');
-
-const inputEdad = document.getElementById('edad');
-const age = document.getElementById('age');
-
-const inputDescribir = document.getElementById('describir');
-const describir = document.getElementById('descripcion');
-
-
-const profileBtn = document.getElementById('ProfileBtn');
-
-profileBtn.addEventListener('click', () => {
-    userName.textContent = inputName.value;
-    age.textContent = inputEdad.value;
-    describir.textContent = inputDescribir.value;
-
-})
-*/
 const inputName = document.getElementById('name');
 const userName = document.getElementById('username');
 
@@ -42,11 +16,11 @@ profileBtn.addEventListener('click', () => {
     describir.textContent = inputDescribir.value;
 
     const user = {
-        user_name: inputName.value,
+        user_name:inputName.value,
         age:inputEdad.value,
         description: inputDescribir.value,
     }
-    console.log(user);
+
     const card = createCard();
     const userElements = createDescription();
 
@@ -82,6 +56,7 @@ const populateElements = (user, userElements) => {
     }
 
 const renderElements = (card, elements) => {
+    console.log(elements);
     card.append(elements.user_name, elements.age, elements.description,);
-console.log(card);
+
 }
